@@ -20,7 +20,7 @@ _, _, test_loader, num_node, num_edge = get_dataloaders(batch_size=64)
 
 # সেভ করা ৫টি মডেলের লোকেশন
 ensemble_models = [
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), f'best_model_fold_{i}.pth')
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), f'sota_model_fold_{i}.pth')
     for i in range(1, 6)
 ]
 

@@ -74,7 +74,7 @@ for m in range(NUM_MODELS):
     
     best_val_rmse = float('inf')
     patience_counter = 0
-    model_save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), f'best_model_fold_{m+1}.pth')
+    model_save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), f'sota_model_fold_{m+1}.pth')
 
     for epoch in range(1, MAX_EPOCHS + 1):
         model.train()
